@@ -1,0 +1,47 @@
+BITÁCORA DE DESARROLLO - PROYECTO "RUEDA LIBRE"
+
+1. REGISTRO DE PETICIONES HTTP
+
+Petición #1: Acceso a la Página Principal
+
+URL completa: http://127.0.0.1:5500/index.html
+Protocolo: HTTP
+Host: 127.0.0.1 (localhost)
+Puerto: 5500
+Ruta (Path): /index.html
+Método de la petición: GET
+Código de estado: 304 Not Modified
+Observación: El navegador utilizó una respuesta que indica que el recurso no ha sido modificado. Es posible que se haya utilizado la caché del navegador.
+
+Petición #2: Intento de Acceso a Promociones (Esta Ruta no Existe)
+
+URL completa: http://127.0.0.1:5500/index.html/promociones.html
+Protocolo: HTTP
+Host: 127.0.0.1 (localhost)
+Puerto: 5500
+Ruta (Path): /index.html/promociones.html
+Método de la petición: GET
+Código de estado: 404 Not Found
+Observación: La ruta solicitada no existe. La ruta /index.html/promociones.html es incorrecta ya que se esta apuntando a una ruta que no existe.
+
+2. ROLES TECNOLÓGICOS EN EL FRONTEND DEL PROYECTO RUEDA LIBRE
+
+HTML (HyperText Markup Language)
+
+Rol: Define la estructura y el contenido base de la página web.
+
+Ejemplo concreto: Crear un menú de navegación superior con enlaces a "Inicio", "Modelos" y "Contacto" utilizando las etiquetas nav, ul y li.
+
+
+CSS (Cascading Style Sheets)
+
+Rol: Define los estilos visuales, las fuentes, los tamaños y la adaptabilidad del sitio web (diseño responsivo).
+
+Ejemplo concreto: Aplicar un fondo verde ecológico, utilizar la tipografía Roboto, redondear los bordes de los botones y organizar el catálogo de bicicletas en columnas.
+
+
+JavaScript
+
+Rol: Controla el comportamiento interactivo y la lógica de programación en el navegador.
+
+Ejemplo concreto: Crear un calculador interactivo en el que el usuario ingrese su altura y la página le muestre su talla ideal de bicicleta sin recargar la web.
