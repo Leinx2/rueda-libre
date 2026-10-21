@@ -52,37 +52,37 @@ Archivo de origen -> Destino -> Ruta escrita
 
 Archivo: index.html
 Destino: Inicio
-Ruta: /index.html
+Ruta: ./index.html
 
 Archivo: index.html
 Destino: Tarifas y rutas
-Ruta: /paginas/tarifas.html
+Ruta: ./paginas/tarifas.html
 
 Archivo: index.html
 Destino: Reservas
-Ruta: /paginas/reservas.html
+Ruta: ./paginas/reservas.html
 
 Archivo: paginas/tarifas.html
 Destino: Inicio
-Ruta: /index.html
+Ruta: ../index.html
 
 Archivo: paginas/tarifas.html
 Destino: Tarifas y rutas
-Ruta: /paginas/tarifas.html
+Ruta: ./tarifas.html
 
 Archivo: paginas/tarifas.html
 Destino: Reservas
-Ruta: /paginas/reservas.html
+Ruta: ./reservas.html
 
 Archivo: paginas/reservas.html
 Destino: Inicio
-Ruta: /index.html
+Ruta: ../index.html
 
 Archivo: paginas/reservas.html
 Destino: Tarifas y rutas
-Ruta: /paginas/tarifas.html
+Ruta: ./tarifas.html
 
 Archivo: paginas/reservas.html
 Destino: Reservas
-Ruta: /paginas/reservas.html
+Ruta: ./reservas.html
 
