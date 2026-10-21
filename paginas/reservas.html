@@ -8,8 +8,6 @@
 <body>
 
     <header>
-        <h1>Reservas de Rueda Libre</h1>
-
         <img
             src="../img/logo.jpg"
             alt="Logo de Rueda Libre"
@@ -23,6 +21,9 @@
                 <li><a href="./reservas.html">Reservas</a></li>
             </ul>
         </nav>
+
+        <h1>Reservas de Rueda Libre</h1>
+        
     </header>
 
     <main>
@@ -52,7 +53,7 @@
                         name="nombre_usuario"
                         id="txt-nombre"
                         placeholder="Nombre completo"
-                        autocomplete="name"
+                        min="3"
                         required
                     >
 
@@ -62,6 +63,8 @@
                         name="numero_documento"
                         id="num-documento"
                         placeholder="Número de documento"
+                        minlength="6"
+                        maxlength="10"
                         required
                     >
 
@@ -82,6 +85,7 @@
                         id="num-celular"
                         placeholder="Número de celular"
                         autocomplete="tel"
+                        pattern="3[0-9]{9}"
                         required
                     >
                 </fieldset>
@@ -94,6 +98,8 @@
                         type="date"
                         name="fecha_alquiler"
                         id="fecha-alquiler"
+                        min="2026-11-01"
+                        max="2026-12-31"
                         required
                     >
 
@@ -149,6 +155,7 @@
                         name="cantidad"
                         id="sel-cantidad"
                         min="1"
+                        max="6"
                         required
                     >
 
@@ -168,6 +175,7 @@
                     <textarea
                         name="observaciones"
                         id="observaciones"
+                        maxlength="300"
                         rows="4"
                         cols="40"
                         placeholder="Escribe aquí tus observaciones"
