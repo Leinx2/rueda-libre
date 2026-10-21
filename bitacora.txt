@@ -45,3 +45,44 @@ JavaScript
 Rol: Controla el comportamiento interactivo y la lógica de programación en el navegador.
 
 Ejemplo concreto: Crear un calculador interactivo en el que el usuario ingrese su altura y la página le muestre su talla ideal de bicicleta sin recargar la web.
+
+3. REGISTRO DE RUTAS PARA LA NAVEGACIÓN 
+
+Archivo de origen -> Destino -> Ruta escrita
+
+Archivo: index.html
+Destino: Inicio
+Ruta: /index.html
+
+Archivo: index.html
+Destino: Tarifas y rutas
+Ruta: /paginas/tarifas.html
+
+Archivo: index.html
+Destino: Reservas
+Ruta: /paginas/reservas.html
+
+Archivo: paginas/tarifas.html
+Destino: Inicio
+Ruta: /index.html
+
+Archivo: paginas/tarifas.html
+Destino: Tarifas y rutas
+Ruta: /paginas/tarifas.html
+
+Archivo: paginas/tarifas.html
+Destino: Reservas
+Ruta: /paginas/reservas.html
+
+Archivo: paginas/reservas.html
+Destino: Inicio
+Ruta: /index.html
+
+Archivo: paginas/reservas.html
+Destino: Tarifas y rutas
+Ruta: /paginas/tarifas.html
+
+Archivo: paginas/reservas.html
+Destino: Reservas
+Ruta: /paginas/reservas.html
+
