@@ -86,3 +86,118 @@ Archivo: paginas/reservas.html
 Destino: Reservas
 Ruta: ./reservas.html
 
+4. ESQUEMA DE REGIONES HTML DEL PROYECTO RUEDA LIBRE
+
+#Archivo 1: index.html
+
+MAIN (Contenido principal)
+│
+├── Introducción
+│
+├── SECTION: ¿Quiénes somos?
+│
+├── SECTION: Nuestros servicios
+│   ├── ARTICLE: Alquiler de bicicletas
+│   ├── ARTICLE: Recorridos guiados
+│   └── ARTICLE: Mantenimiento de bicicletas
+│
+├── SECTION: ¿Cómo alquilar?
+│   ├── Pasos para alquilar
+│   └── Beneficios de alquilar
+│
+└── SECTION: Encuéntranos
+    ├── Dirección
+    ├── Enlace a Google Maps
+    ├── Imagen de un ciclista
+    └── Correo electrónico
+
+#Archivo 2: tarifas.html
+
+PÁGINA 2: TARIFAS Y RUTAS (paginas/tarifas.html)
+│
+├── HEADER (Encabezado del sitio)
+│   ├── Logo de Rueda Libre
+│   ├── H1: Tarifas de Rueda Libre
+│   └── NAV (Navegación principal)
+│       ├── Inicio
+│       ├── Tarifas y rutas
+│       └── Reservas
+│
+├── MAIN (Contenido principal)
+│   │
+│   ├── SECTION: Tarifas de alquiler de bicicletas
+│   │   └── Tabla de precios de alquiler
+│   │
+│   ├── SECTION: Tarifas de recorridos guiados
+│   │   ├── Enlace para reservar
+│   │   └── Tabla de precios y características
+│   │
+│   └── SECTION: Información adicional
+│       ├── Información de seguridad
+│       ├── SECTION: Horarios de salida
+│       │   └── Lista de horarios
+│       └── ASIDE: ¿Qué debes llevar?
+│           └── Lista de objetos necesarios
+│
+└── FOOTER (Pie de página)
+    ├── Derechos reservados
+    ├── Correo electrónico
+    └── Enlace para volver al inicio
+
+#Archivo 3: reservas.html
+
+PÁGINA 3: RESERVAS
+│
+├── HEADER (Encabezado)
+│   ├── H1: Reservas de Rueda Libre
+│   ├── Imagen del logo
+│   └── NAV (Navegación principal)
+│       ├── Inicio
+│       ├── Tarifas y rutas
+│       └── Reservas
+│
+├── MAIN (Contenido principal)
+│   │
+│   ├── SECTION: Reserva tu bicicleta
+│   │   └── Correo electrónico de contacto
+│   │
+│   └── SECTION: Formulario de Reserva
+│       │
+│       └── FORM
+│           │
+│           ├── FIELDSET: Tus Datos
+│           │   ├── Nombre completo
+│           │   ├── Número de documento
+│           │   ├── Correo electrónico
+│           │   └── Número de celular
+│           │
+│           ├── FIELDSET: Tu Alquiler
+│           │   ├── Fecha del alquiler
+│           │   └── Tipo de bicicleta
+│           │       ├── Urbana (radio)
+│           │       ├── Montaña (radio)
+│           │       └── Eléctrica (radio)
+│           │
+│           └── FIELDSET: Plan de Ruta
+│               ├── Tiempo de alquiler (select)
+│               ├── Cantidad de bicicletas (number)
+│               ├── Recorridos guiados (select)
+│               ├── Observaciones adicionales (textarea)
+│               ├── Aceptación de condiciones (checkbox)
+│               └── Botón Confirmar y Enviar
+│
+├── ASIDE (Contenido complementario)
+│   └── SECTION: Horario de atención
+│       └── DL (Lista descriptiva)
+│           ├── DT: Lunes a Viernes
+│           │   └── DD: 5:00 a. m. - 3:00 p. m.
+│           ├── DT: Sábados
+│           │   └── DD: 8:00 a. m. - 3:00 p. m.
+│           └── DT: Domingos
+│               └── DD: Cerrados
+│
+└── FOOTER (Pie de página)
+    ├── Derechos reservados
+    ├── Correo electrónico
+    └── Enlace para volver al inicio
+

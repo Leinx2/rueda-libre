@@ -9,26 +9,22 @@
     <title>Tarifas y recorridos | Rueda Libre</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./tarifas.html">Tarifas y rutas</a></li>
-            <li><a href="./reservas.html">Reservas</a></li>
-        </ul>
-    </nav>
 
     <header>
         <img src="../img/logo.jpg" alt="Logo de Rueda Libre" width="150">
 
         <h1>Tarifas de Rueda Libre</h1>
 
-        <nav>
-            <a href="../index.html">Volver al inicio</a>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./tarifas.html">Tarifas y rutas</a></li>
+                <li><a href="./reservas.html">Reservas</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        
         <section id="alquiler">
             <h2>Tarifas de alquiler de bicicletas</h2>
 
@@ -70,8 +66,11 @@
         </section>
 
         <section id="recorridos">
-            <a href="./reservas.html">Reservar ahora</a>
             <h2>Tarifas de recorridos guiados</h2>
+
+            <p>
+                <a href="./reservas.html">Reservar ahora</a>
+            </p>
 
             <table border="1">
                 <caption>Precios y características de los recorridos guiados</caption>
@@ -112,7 +111,10 @@
                     </tr>
                 </tbody>
             </table>
-            <a href="./reservas.html">Reservar ahora</a>
+
+            <p>
+                <a href="./reservas.html">Reservar ahora</a>
+            </p>
         </section>
 
         <section id="informacion-adicional">
@@ -123,33 +125,38 @@
                 el alquiler de bicicletas incluye casco y candado.
             </p>
 
-            <h3>Horarios de salida</h3>
+            <section>
+                <h3>Horarios de salida</h3>
 
-            <ul>
-                <li>Recorridos de la mañana: 8:00 a. m.</li>
-                <li>Recorridos de la tarde: 2:00 p. m.</li>
-            </ul>
+                <ul>
+                    <li>Recorridos de la mañana: 8:00 a. m.</li>
+                    <li>Recorridos de la tarde: 2:00 p. m.</li>
+                </ul>
+            </section>
 
-            <h3>¿Qué debes llevar?</h3>
+            <aside>
+                <h3>¿Qué debes llevar?</h3>
 
-            <ul>
-                <li>Ropa cómoda y adecuada para montar en bicicleta.</li>
-                <li>Botella de agua para mantenerte hidratado.</li>
-                <li>Protector solar.</li>
-                <li>Documento de identificación.</li>
-            </ul>
+                <ul>
+                    <li>Ropa cómoda y adecuada para montar en bicicleta.</li>
+                    <li>Botella de agua para mantenerte hidratado.</li>
+                    <li>Protector solar.</li>
+                    <li>Documento de identificación.</li>
+                </ul>
+            </aside>
         </section>
-
     </main>
 
     <footer>
         <p>&copy; 2026 Rueda Libre. Todos los derechos reservados.</p>
 
         <p>
-            Correo: <a href="mailto:bicicletas@ruedalibre.com">bicicletas@ruedalibre.com</a>
+            Correo:
+            <a href="mailto:bicicletas@ruedalibre.com">bicicletas@ruedalibre.com</a>
         </p>
 
         <a href="../index.html">Volver a la página de inicio</a>
     </footer>
+
 </body>
 </html>
