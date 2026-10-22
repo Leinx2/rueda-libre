@@ -53,7 +53,7 @@
                         name="nombre_usuario"
                         id="txt-nombre"
                         placeholder="Nombre completo"
-                        min="3"
+                        minlength="3"
                         required
                     >
 
@@ -65,6 +65,7 @@
                         placeholder="Número de documento"
                         minlength="6"
                         maxlength="10"
+                        pattern="[0-9]{6,10}"
                         required
                     >
 

@@ -201,3 +201,72 @@ PÁGINA 3: RESERVAS
     ├── Correo electrónico
     └── Enlace para volver al inicio
 
+5. AUDITORÍA DE ACCESIBILIDAD
+
+Se revisaron las tres páginas del proyecto: index.html, paginas/tarifas.html y paginas/reservas.html.
+
+Se verificó el idioma lang="es", los textos alternativos de las imágenes, la jerarquía de encabezados y los enlaces de navegación.
+
+Se corrigieron errores tipográficos en los textos alternativos y rutas relativas de navegación.
+
+Las tablas de tarifas incluyen caption y encabezados con scope.
+
+Se incorporó un mapa de Google Maps con un título descriptivo.
+
+
+6. VALIDACIÓN DEL FORMULARIO
+
+Nombre completo: obligatorio, mínimo 3 caracteres.
+Documento: obligatorio, entre 6 y 10 dígitos.
+Correo: obligatorio, formato válido.
+Celular: obligatorio, 10 dígitos y comienza por 3.
+Fecha del alquiler: entre el 1 de noviembre y el 31 de diciembre de 2026.
+Tipo de bicicleta: obligatorio.
+Plan de alquiler: obligatorio.
+Cantidad de bicicletas: entre 1 y 6.
+Recorrido guiado: obligatorio.
+Observaciones: opcionales, máximo 300 caracteres.
+Aceptación de políticas: obligatoria.
+
+Se utilizaron atributos HTML como required, minlength, maxlength, pattern, min y max para validar los campos.
+
+7. VALIDACIÓN DE CONTRASTE WCAG
+
+Blanco sobre Verde Ruta (#1E7A4F): 5.31:1. Cumple WCAG AA.
+Blanco sobre Naranja Pedal (#F39A2B): 2.22:1. No cumple WCAG AA.
+Azul Noche (#14213D) sobre Naranja Pedal (#F39A2B): 7.20:1. Cumple WCAG AA.
+Azul Noche (#14213D) sobre Crema (#FAF6EF): 14.83:1. Cumple WCAG AA.
+Gris Asfalto (#5B6470) sobre Crema (#FAF6EF): 5.57:1. Cumple WCAG AA.
+Verde Ruta (#1E7A4F) sobre Crema (#FAF6EF): 4.93:1. Cumple WCAG AA.
+Naranja Pedal (#F39A2B) sobre Crema (#FAF6EF): 2.06:1. No cumple WCAG AA.
+Blanco sobre Azul Noche (#14213D): 15.97:1. Cumple WCAG AA.
+
+Los valores deben comprobarse con WebAIM Contrast Checker si se requiere evidencia de la herramienta.
+
+
+8. MAPA DE COLORES
+
+Verde Ruta (#1E7A4F): propuesto para enlaces y botones con texto blanco por su contraste de 5.31:1.
+
+Azul Noche (#14213D): propuesto para títulos y texto principal sobre Crema por su contraste de 14.83:1.
+
+Crema (#FAF6EF): propuesto como fondo general.
+
+Gris Asfalto (#5B6470): propuesto para texto secundario sobre Crema por su contraste de 5.57:1.
+
+Naranja Pedal (#F39A2B): propuesto para elementos destacados con texto Azul Noche por su contraste de 7.20:1.
+
+Se evitan las combinaciones que no cumplen WCAG AA. La aplicación de estilos CSS corresponde al siguiente reto.
+
+
+9. PRUEBAS Y PUBLICACIÓN
+
+Se comprobaron las tres páginas publicadas y la navegación entre ellas. Los enlaces válidos funcionaron correctamente.
+
+Se probó una ruta inexistente y se obtuvo el código HTTP 404 Not Found.
+
+Repositorio: https://github.com/Leinx2/rueda-libre
+
+Sitio publicado: https://leinx2.github.io/rueda-libre/
+
+Versión: v0.2
