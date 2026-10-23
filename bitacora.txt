@@ -270,3 +270,19 @@ Repositorio: https://github.com/Leinx2/rueda-libre
 Sitio publicado: https://leinx2.github.io/rueda-libre/
 
 Versión: v0.2
+
+10. IMPLEMENTACIÓN DE ESTILOS CSS
+
+Primero busqué las fuentes en Google Fonts y elegí Montserrat para los títulos y Open Sans para los textos. Copié los tres enlaces proporcionados por Google Fonts y los agregué en la etiqueta head de las tres páginas HTML, antes del enlace a la hoja de estilos CSS.
+
+Después creé la carpeta css y dentro de ella el archivo styles.css. Vinculé este archivo a las tres páginas del proyecto, teniendo en cuenta que las páginas ubicadas dentro de la carpeta paginas necesitan una ruta relativa diferente.
+
+Dentro de styles.css utilicé :root para crear variables globales. Agregué las variables correspondientes a los cinco colores definidos en el mapa de colores del reto anterior, las dos familias tipográficas y tres tamaños de espaciado: S, M y L, expresados en rem.
+
+Luego apliqué los estilos generales al body, incluyendo la familia tipográfica de los textos, el color principal y el fondo crema. También agrupé los encabezados h1, h2 y h3 para utilizar Montserrat, con un peso de fuente de 700.
+
+Agregué estilos para los enlaces a, los botones button y el iframe del mapa de Google Maps. En los enlaces y botones utilicé los colores definidos en el mapa de colores, teniendo en cuenta el contraste entre el texto y el fondo.
+
+También eliminé el estilo en línea que tenía el iframe del mapa y trasladé esa regla a la hoja de estilos externa, para mantener los estilos organizados en un solo archivo CSS.
+
+Finalmente, utilicé las herramientas de desarrollador del navegador para revisar los estilos aplicados. Comprobé que los párrafos utilizaran Open Sans con peso 400 y que los encabezados utilizaran Montserrat con peso 700. También desactivé temporalmente la propiedad font-family de body y observé cómo cambiaba la fuente del párrafo, lo que me permitió comprobar la herencia de esa propiedad.
