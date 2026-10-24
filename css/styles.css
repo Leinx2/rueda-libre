@@ -42,3 +42,46 @@ button {
 iframe {
     border: 0;
 }
+
+#menu a {
+    color: var(--color-verde);
+}
+
+#menu a.activo {
+    color: var(--color-verde);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+#menu a:hover {
+    color: var(--color-azul);
+}
+
+#menu a:focus {
+    outline: 3px solid var(--color-naranja);
+    outline-offset: 3px;
+}
+
+.boton-accion {
+    color: var(--color-crema);
+    background-color: var(--color-verde);
+    padding: var(--espacio-s);
+}
+
+.boton-accion:hover{
+    color: var(--color-azul);
+    background-color: var(--color-naranja);
+}
+
+.boton-accion:focus{
+    outline: 3px solid var(--color-naranja);
+    outline-offset: 3px;
+}
+
+input:focus, select:focus,
+textarea:focus,
+button:focus {
+    outline: 3px solid var(--color-naranja);
+    outline-offset: 3px;
+}

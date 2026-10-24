@@ -286,3 +286,11 @@ Agregué estilos para los enlaces a, los botones button y el iframe del mapa de 
 También eliminé el estilo en línea que tenía el iframe del mapa y trasladé esa regla a la hoja de estilos externa, para mantener los estilos organizados en un solo archivo CSS.
 
 Finalmente, utilicé las herramientas de desarrollador del navegador para revisar los estilos aplicados. Comprobé que los párrafos utilizaran Open Sans con peso 400 y que los encabezados utilizaran Montserrat con peso 700. También desactivé temporalmente la propiedad font-family de body y observé cómo cambiaba la fuente del párrafo, lo que me permitió comprobar la herencia de esa propiedad.
+
+11. NAVEGACIÓN CON ESTADOS
+
+Durante este reto trabajé los estados de los enlaces y los elementos del formulario mediante CSS. Agregué el identificador menu a la lista de navegación y la clase activo al enlace correspondiente a la página actual. También configuré los estados hover y focus para que los enlaces, botones y campos del formulario respondan al pasar el cursor y al navegar con el teclado.
+
+Al aplicar los estilos, encontré un problema de especificidad: la regla #menu a prevalecía sobre .activo, por lo que el color definido en esta última aparecía tachado en las herramientas de desarrollador. Lo solucioné utilizando el selector #menu a.activo, que tiene mayor especificidad porque combina un identificador, un elemento y una clase. Así conseguí aplicar los estilos sin utilizar !important ni estilos en línea.
+
+Finalmente, añadí un subrayado al enlace activo para identificar mejor la página actual y comprobé la navegación con Tab en las tres páginas, incluyendo los enlaces, botones y campos del formulario. Este ejercicio me permitió comprender mejor la cascada, la especificidad y la importancia de hacer que una página sea accesible mediante el teclado.
