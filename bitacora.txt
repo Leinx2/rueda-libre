@@ -308,3 +308,21 @@ Para organizar el menú de navegación en una fila, utilicé display: flex sobre
 Finalmente, comparé el ancho de una tarjeta en las herramientas de desarrollador, en la pestaña Computed, modificando temporalmente box-sizing. Con border-box, el ancho registrado fue de 277.656 px; con content-box, fue de 225.656 px. Esta comparación me permitió observar cómo cambia el cálculo del ancho al modificar el modelo de caja.
 
 Conclusión: este reto me permitió practicar el uso de Flexbox, las unidades relativas, las variables CSS, los selectores y el modelo de caja, además de comprender cómo mejorar la organización visual y la legibilidad de una página web.
+
+13. DISEÑO RESPONSIVO, MEJORAS VISUALES Y VALIDACIÓN FINAL
+
+Durante este reto trabajé en la adaptación del sitio web Rueda Libre a diferentes tamaños de pantalla, utilizando media queries con un punto de quiebre de 600 px. Ajusté la distribución del encabezado y del menú de navegación para permitir que sus elementos se reorganizaran en pantallas pequeñas.
+
+También adapté las tarjetas de servicios de la página principal mediante Flexbox, cambiando su distribución de horizontal a vertical en dispositivos con pantallas pequeñas. Ajusté el ancho de las tarjetas para mantener una presentación ordenada y facilitar la lectura del contenido.
+
+Para mejorar la adaptación de las imágenes y del mapa de Google Maps, utilicé max-width: 100% y height: auto en las imágenes, además de limitar el ancho de los iframe. Organicé el contenido de la sección "Encuéntranos" con Flexbox para mostrar el mapa y la imagen de manera horizontal en pantallas grandes y vertical en pantallas pequeñas.
+
+En la página de tarifas, incorporé contenedores con desplazamiento horizontal para las tablas, utilizando overflow-x: auto. Esto permite consultar las tablas en pantallas estrechas sin que su contenido se desborde del contenedor.
+
+En el formulario de reservas, revisé la presentación de las etiquetas, los campos de entrada, los selectores y los botones de opción. Ajusté los estilos para mantener una distribución funcional y comprobé su apariencia en diferentes tamaños de pantalla.
+
+También incorporé una etiqueta "Nuevo" en la tarjeta de la bicicleta eléctrica, utilizando posicionamiento absoluto dentro de la tarjeta y los colores establecidos en el mapa de colores del proyecto.
+
+Añadí un enlace fijo de contacto por WhatsApp en las tres páginas del sitio. Para mejorar su interacción visual, configuré el estado :hover, de modo que al pasar el cursor el fondo cambie a naranja y el texto a azul noche, respetando la paleta de colores definida para Rueda Libre. También mantuve el espacio inferior en pantallas pequeñas para evitar que el botón fijo se superponga con el contenido.
+
+Finalmente, probé la navegación entre las tres páginas, comprobé la navegación mediante teclado y revisé el diseño en diferentes tamaños de pantalla. Estas pruebas permitieron verificar la presentación general del sitio y detectar pequeños detalles visuales para su revisión.

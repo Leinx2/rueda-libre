@@ -56,16 +56,19 @@ button {
 
 iframe {
     border: 0;
+    max-width: 100%;
 }
 
 #menu {
     display: flex;
     list-style: none;
+    gap: var(--espacio-s);
 }
 
 #menu a {
     color: var(--color-verde);
     padding: var(--espacio-s);
+    white-space: nowrap;
 }
 
 #menu a.activo {
@@ -82,6 +85,15 @@ iframe {
 #menu a:focus {
     outline: 3px solid var(--color-naranja);
     outline-offset: 3px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 90px;
 }
 
 .boton-accion {
@@ -119,6 +131,7 @@ button:focus {
     border-radius: var(--espacio-s);
     flex: 1;
     min-width: 0;
+    position: relative;
 
     display: flex;
     flex-direction: column;
@@ -146,15 +159,104 @@ thead th {
 }
 
 fieldset label {
-    display: block;
+    display: inline;
 }
 
 input:not([type="radio"]):not([type="checkbox"]),
 select,
 textarea {
-    width: 100%;
+    width: calc(100% - 6px);
 }
 
 fieldset {
     margin-bottom: var(--espacio-m);
 }
+
+.etiqueta-nuevo {
+    position: absolute;
+    top: var(--espacio-s);
+    right: var(--espacio-s);
+    color: var(--color-azul);
+    background-color: var(--color-naranja);
+    padding: 5px;
+    border-radius: var(--espacio-s);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+
+.whatsapp-fijo {
+    position: fixed;
+    bottom: var(--espacio-m);
+    right: var(--espacio-m);
+    background-color: var(--color-verde);
+    color: var(--color-crema);
+    padding: var(--espacio-m);
+    border-radius: var(--espacio-s);
+    text-decoration: none;
+}
+
+.whatsapp-fijo:hover {
+    color: var(--color-azul);
+    background-color: var(--color-naranja);
+}
+
+@media (max-width: 600px) {
+    .servicios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta-servicio {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    header img {
+        width: 75px;
+    }
+
+    #menu {
+        flex-wrap: wrap;
+        padding-left: 0;
+        gap: var(--espacio-s);
+    }
+
+    body{
+        padding-bottom: 5rem;
+    }
+
+    .encuentranos-contenido {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tabla-contenedor {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.encuentranos-contenido {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--espacio-m);
+}
+
+.encuentranos-contenido iframe,
+.encuentranos-contenido img {
+    width: 100%;
+    max-width: 500px;
+}
+
