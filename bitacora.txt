@@ -294,3 +294,17 @@ Durante este reto trabajé los estados de los enlaces y los elementos del formul
 Al aplicar los estilos, encontré un problema de especificidad: la regla #menu a prevalecía sobre .activo, por lo que el color definido en esta última aparecía tachado en las herramientas de desarrollador. Lo solucioné utilizando el selector #menu a.activo, que tiene mayor especificidad porque combina un identificador, un elemento y una clase. Así conseguí aplicar los estilos sin utilizar !important ni estilos en línea.
 
 Finalmente, añadí un subrayado al enlace activo para identificar mejor la página actual y comprobé la navegación con Tab en las tres páginas, incluyendo los enlaces, botones y campos del formulario. Este ejercicio me permitió comprender mejor la cascada, la especificidad y la importancia de hacer que una página sea accesible mediante el teclado.
+
+12. MODELO DE CAJA, TARJETAS, TABLAS, FORMULARIO Y MENÚ
+
+Durante este reto trabajé el modelo de caja de CSS mediante la propiedad box-sizing: border-box, que permite incluir el padding y los bordes dentro del ancho total de los elementos. También establecí un ancho máximo para el contenido principal, centré el elemento main y definí una altura mínima para la portada utilizando unidades relativas al tamaño de la ventana.
+
+Después, organicé los servicios de la página principal en tarjetas mediante Flexbox, agregando espaciado, bordes y bordes redondeados con las variables CSS definidas anteriormente. También mejoré la legibilidad de las tablas mediante border-collapse, padding, bordes y colores de fondo y texto con suficiente contraste en los encabezados.
+
+En el formulario de reservas, utilicé display: block para organizar las etiquetas, width: 100% para ampliar los campos y :not() para excluir los botones de opción y las casillas de verificación de esa regla. Además, agregué separación entre los grupos mediante margin-bottom y ajusté el relleno del botón con padding.
+
+Para organizar el menú de navegación en una fila, utilicé display: flex sobre el elemento #menu. También eliminé las viñetas con list-style: none y agregué espacio entre los enlaces mediante padding.
+
+Finalmente, comparé el ancho de una tarjeta en las herramientas de desarrollador, en la pestaña Computed, modificando temporalmente box-sizing. Con border-box, el ancho registrado fue de 277.656 px; con content-box, fue de 225.656 px. Esta comparación me permitió observar cómo cambia el cálculo del ancho al modificar el modelo de caja.
+
+Conclusión: este reto me permitió practicar el uso de Flexbox, las unidades relativas, las variables CSS, los selectores y el modelo de caja, además de comprender cómo mejorar la organización visual y la legibilidad de una página web.
