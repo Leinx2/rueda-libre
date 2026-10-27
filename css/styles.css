@@ -31,6 +31,7 @@ body {
     font-weight: 400;
     color: var(--color-azul);
     background-color: var(--color-crema);
+    margin: 0;
 }
 
 h1, h2, h3 {
@@ -63,6 +64,7 @@ iframe {
     display: flex;
     list-style: none;
     gap: var(--espacio-s);
+    flex-wrap: wrap;
 }
 
 #menu a {
@@ -90,10 +92,17 @@ iframe {
 header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 header img {
     width: 90px;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: var(--espacio-s);
 }
 
 .boton-accion {
@@ -228,16 +237,20 @@ fieldset {
         gap: var(--espacio-s);
     }
 
-    body{
-        padding-bottom: 5rem;
+    body {
+        padding-bottom: 3.5rem;
     }
 
     .encuentranos-contenido {
     flex-direction: column;
     align-items: center;
     }
-
     
+    footer {
+        display: flex;
+        align-items: flex-start;
+    }
+
 }
 
 img {
@@ -254,6 +267,7 @@ img {
     display: flex;
     align-items: flex-start;
     gap: var(--espacio-m);
+    flex-wrap: wrap;
 }
 
 .encuentranos-contenido iframe,
@@ -262,3 +276,72 @@ img {
     max-width: 500px;
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    background-color: var(--color-azul);
+    color: var(--color-crema);
+    padding: 2.5rem;
+    border-top: 4px solid var(--color-naranja);
+
+}
+
+footer h2 {
+    color: var(--color-crema);
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+footer > div {
+    flex: 0 1 280px;
+}
+
+.horario-footer {
+    flex-basis: 320px;
+}
+
+.horario-footer dl {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 0.5rem 1rem;
+    margin: 0;
+}
+
+.horario-footer dd {
+    margin: 0;
+}
+
+.horario-footer dt {
+    font-weight: 600;
+}
+
+.nombre-marca {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: var(--color-crema);
+    text-underline-offset: 4px;
+}
+
+footer a:hover {
+    color: var(--color-naranja);
+}
+
+footer p {
+    line-height: 1.6;
+}
+
+@media (max-width: 1039px) {
+    footer {
+        justify-content: flex-start;
+    }
+}
