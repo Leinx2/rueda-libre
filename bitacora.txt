@@ -342,3 +342,34 @@ Pruebas realizadas con DevTools:
 1280 px: 4 columnas.
 900 px: 3 columnas.
 500 px: 1 columna.
+
+15. Layout en Dos Dimensiones
+¿Qué hice?
+
+Utilicé Grid para organizar la portada en dos columnas y distribuir las tres tarjetas de rutas en una fila. También utilicé Flexbox en el encabezado y el pie de página para organizar y alinear sus elementos.
+
+¿Por qué lo hice?
+
+Elegí Grid para distribuir elementos en columnas y Flexbox para alinear y distribuir elementos en una dimensión. Me falta implementar la distribución de la página de reservas y organizar dos campos del formulario en una fila.
+
+¿Cómo utilicé la IA?
+
+Utilicé ChatGPT para comprender las propiedades de Grid y Flexbox, resolver dudas sobre su funcionamiento y recibir orientación para realizar los cambios por mi cuenta.
+
+15. Layout en Dos Dimensiones
+
+¿Qué hice?
+
+Utilicé CSS Grid para organizar la portada en dos columnas y distribuir las tres tarjetas de rutas en una fila. En reservas, utilicé Grid para distribuir el formulario y la información de contacto en proporción 2:1. También organicé los campos de documento y celular en dos columnas iguales. Añadí media queries para adaptar la distribución a pantallas pequeñas. El encabezado y el pie de página ya estaban organizados con Flexbox desde retos anteriores.
+
+¿Por qué lo hice?
+
+Elegí Grid para distribuir los elementos en filas y columnas, y Flexbox para alinear y distribuir elementos en una dimensión. Utilicé media queries para adaptar el diseño cuando el espacio disponible es menor.
+
+¿Para qué lo hice?
+
+Para cumplir los requisitos del reto, reproducir el boceto de escritorio y mejorar la distribución de las páginas de inicio y reservas.
+
+¿Cómo utilicé la IA?
+
+Utilicé ChatGPT como apoyo para comprender las propiedades de Grid y Flexbox, resolver dudas sobre las proporciones de las columnas y las media queries, y revisar mi código paso a paso. Escribí y probé los cambios para comprender cómo funcionan.

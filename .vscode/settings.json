@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "rueda-libre"
+    "liveServer.settings.multiRootWorkspaceName": "rueda-libre",
+    "liveServer.settings.port": 5501
 }

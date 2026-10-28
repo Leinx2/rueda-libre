@@ -44,182 +44,190 @@
 
         <section>
             <h2>Formulario de Reserva</h2>
+            <div class="formulario-layout">
+                <form action="/procesar-datos" method="post">
 
-            <form action="/procesar-datos" method="post">
+                    <fieldset>
+                        <legend>Tus Datos</legend>
 
-                <fieldset>
-                    <legend>Tus Datos</legend>
+                        <label for="txt-nombre">Nombre Completo</label>
+                        <input
+                            type="text"
+                            name="nombre_usuario"
+                            id="txt-nombre"
+                            placeholder="Nombre completo"
+                            minlength="3"
+                            required
+                        >
+                        
+                        <div class="inputs-layout">
+                            <div class="input-documento">
+                                <label for="num-documento">Número de Documento</label>
+                                <input
+                                    type="text"
+                                    name="numero_documento"
+                                    id="num-documento"
+                                    placeholder="Número de documento"
+                                    minlength="6"
+                                    maxlength="10"
+                                    pattern="[0-9]{6,10}"
+                                    required
+                                >
+                            </div>
 
-                    <label for="txt-nombre">Nombre Completo</label>
-                    <input
-                        type="text"
-                        name="nombre_usuario"
-                        id="txt-nombre"
-                        placeholder="Nombre completo"
-                        minlength="3"
-                        required
-                    >
+                            <div class="input-celular">
+                                <label for="num-celular">Número de Celular</label>
+                                <input
+                                    type="tel"
+                                    name="celular_usuario"
+                                    id="num-celular"
+                                    placeholder="Número de celular"
+                                    autocomplete="tel"
+                                    pattern="3[0-9]{9}"
+                                    required
+                                >
+                            </div>
+                        </div>
 
-                    <label for="num-documento">Número de Documento</label>
-                    <input
-                        type="text"
-                        name="numero_documento"
-                        id="num-documento"
-                        placeholder="Número de documento"
-                        minlength="6"
-                        maxlength="10"
-                        pattern="[0-9]{6,10}"
-                        required
-                    >
+                        <label for="txt-email">Correo Electrónico</label>
+                        <input
+                            type="email"
+                            name="email_usuario"
+                            id="txt-email"
+                            placeholder="ejemplo@gmail.com"
+                            autocomplete="email"
+                            required
+                        >
 
-                    <label for="txt-email">Correo Electrónico</label>
-                    <input
-                        type="email"
-                        name="email_usuario"
-                        id="txt-email"
-                        placeholder="ejemplo@gmail.com"
-                        autocomplete="email"
-                        required
-                    >
+                    </fieldset>
 
-                    <label for="num-celular">Número de Celular</label>
-                    <input
-                        type="tel"
-                        name="celular_usuario"
-                        id="num-celular"
-                        placeholder="Número de celular"
-                        autocomplete="tel"
-                        pattern="3[0-9]{9}"
-                        required
-                    >
-                </fieldset>
+                    <fieldset>
+                        <legend>Tu Alquiler</legend>
 
-                <fieldset>
-                    <legend>Tu Alquiler</legend>
+                        <label for="fecha-alquiler">Fecha del Alquiler</label>
+                        <input
+                            type="date"
+                            name="fecha_alquiler"
+                            id="fecha-alquiler"
+                            min="2026-11-01"
+                            max="2026-12-31"
+                            required
+                        >
 
-                    <label for="fecha-alquiler">Fecha del Alquiler</label>
-                    <input
-                        type="date"
-                        name="fecha_alquiler"
-                        id="fecha-alquiler"
-                        min="2026-11-01"
-                        max="2026-12-31"
-                        required
-                    >
+                        <p>Tipo de bicicleta:</p>
 
-                    <p>Tipo de bicicleta:</p>
+                        <input
+                            type="radio"
+                            id="urbana"
+                            name="modelo_bicicleta"
+                            value="urbana"
+                            required
+                        >
+                        <label for="urbana">Urbana</label>
 
-                    <input
-                        type="radio"
-                        id="urbana"
-                        name="modelo_bicicleta"
-                        value="urbana"
-                        required
-                    >
-                    <label for="urbana">Urbana</label>
+                        <input
+                            type="radio"
+                            id="montana"
+                            name="modelo_bicicleta"
+                            value="montana"
+                        >
+                        <label for="montana">Montaña</label>
 
-                    <input
-                        type="radio"
-                        id="montana"
-                        name="modelo_bicicleta"
-                        value="montana"
-                    >
-                    <label for="montana">Montaña</label>
+                        <input
+                            type="radio"
+                            id="electrica"
+                            name="modelo_bicicleta"
+                            value="electrica"
+                        >
+                        <label for="electrica">Eléctrica</label>
 
-                    <input
-                        type="radio"
-                        id="electrica"
-                        name="modelo_bicicleta"
-                        value="electrica"
-                    >
-                    <label for="electrica">Eléctrica</label>
+                    </fieldset>
 
-                </fieldset>
+                    <fieldset>
+                        <legend>Plan de Ruta</legend>
 
-                <fieldset>
-                    <legend>Plan de Ruta</legend>
+                        <label for="sel-plan">
+                            Selecciona el tiempo de alquiler
+                        </label>
+                        <select
+                            name="sel-tiempo"
+                            id="sel-plan"
+                            required
+                        >
+                            <option value="">-- Elige un plan --</option>
+                            <option value="1h">Alquiler por 1 hora</option>
+                            <option value="12h">Alquiler por 12 horas</option>
+                            <option value="1d">Alquiler por 1 día</option>
+                        </select>
 
-                    <label for="sel-plan">
-                        Selecciona el tiempo de alquiler
-                    </label>
-                    <select
-                        name="sel-tiempo"
-                        id="sel-plan"
-                        required
-                    >
-                        <option value="">-- Elige un plan --</option>
-                        <option value="1h">Alquiler por 1 hora</option>
-                        <option value="12h">Alquiler por 12 horas</option>
-                        <option value="1d">Alquiler por 1 día</option>
-                    </select>
+                        <label for="sel-cantidad">Cantidad de bicicletas</label>
+                        <input
+                            type="number"
+                            name="cantidad"
+                            id="sel-cantidad"
+                            min="1"
+                            max="6"
+                            required
+                        >
 
-                    <label for="sel-cantidad">Cantidad de bicicletas</label>
-                    <input
-                        type="number"
-                        name="cantidad"
-                        id="sel-cantidad"
-                        min="1"
-                        max="6"
-                        required
-                    >
+                        <label for="sel-recorrido">Recorridos guiados</label>
+                        <select
+                            name="recorrido"
+                            id="sel-recorrido"
+                            required
+                        >
+                            <option value="">-- Elige un recorrido --</option>
+                            <option value="urbano">Recorrido urbano</option>
+                            <option value="montaña">Recorrido por la montaña</option>
+                            <option value="pista">Recorrido por pista</option>
+                        </select>
 
-                    <label for="sel-recorrido">Recorridos guiados</label>
-                    <select
-                        name="recorrido"
-                        id="sel-recorrido"
-                        required
-                    >
-                        <option value="">-- Elige un recorrido --</option>
-                        <option value="urbano">Recorrido urbano</option>
-                        <option value="montaña">Recorrido por la montaña</option>
-                        <option value="pista">Recorrido por pista</option>
-                    </select>
+                        <label for="observaciones">Observaciones adicionales</label>
+                        <textarea
+                            name="observaciones"
+                            id="observaciones"
+                            maxlength="300"
+                            rows="4"
+                            cols="40"
+                            placeholder="Escribe aquí tus observaciones"
+                        ></textarea>
 
-                    <label for="observaciones">Observaciones adicionales</label>
-                    <textarea
-                        name="observaciones"
-                        id="observaciones"
-                        maxlength="300"
-                        rows="4"
-                        cols="40"
-                        placeholder="Escribe aquí tus observaciones"
-                    ></textarea>
+                        <input
+                            type="checkbox"
+                            name="acepta_condiciones"
+                            id="acepta-condiciones"
+                            required
+                        >
+                        <label for="acepta-condiciones">
+                            Acepto las condiciones de la reserva
+                        </label>
 
-                    <input
-                        type="checkbox"
-                        name="acepta_condiciones"
-                        id="acepta-condiciones"
-                        required
-                    >
-                    <label for="acepta-condiciones">
-                        Acepto las condiciones de la reserva
-                    </label>
+                    </fieldset>
 
-                </fieldset>
+                    <button type="submit" name="reserva">
+                        Confirmar y Enviar
+                    </button>
 
-                <button type="submit" name="reserva">
-                    Confirmar y Enviar
-                </button>
+                </form>
 
-            </form>
+                <aside>
+                    <section>
+                        <h2>Horario de atención</h2>
+
+                        <dl>
+                            <dt>Lunes a Viernes</dt>
+                            <dd>5:00 a. m. - 3:00 p. m.</dd>
+
+                            <dt>Sábados</dt>
+                            <dd>8:00 a. m. - 3:00 p. m.</dd>
+
+                            <dt>Domingos</dt>
+                            <dd>Cerrados</dd>
+                        </dl>
+                    </section>
+                </aside>
+            </div>
         </section>
-
-        <aside>
-            <section>
-                <h2>Horario de atención</h2>
-
-                <dl>
-                    <dt>Lunes a Viernes</dt>
-                    <dd>5:00 a. m. - 3:00 p. m.</dd>
-
-                    <dt>Sábados</dt>
-                    <dd>8:00 a. m. - 3:00 p. m.</dd>
-
-                    <dt>Domingos</dt>
-                    <dd>Cerrados</dd>
-                </dl>
-            </section>
-        </aside>
 
     </main>
 
