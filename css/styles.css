@@ -20,6 +20,7 @@
 main {
     max-width: 70rem;
     margin: 0 auto;
+    padding: 0 var(--espacio-m);
 }
 
 .portada {
@@ -232,13 +233,8 @@ fieldset {
     }
 
     #menu {
-        flex-wrap: wrap;
         padding-left: 0;
         gap: var(--espacio-s);
-    }
-
-    body {
-        padding-bottom: 3.5rem;
     }
 
     .encuentranos-contenido {
@@ -247,8 +243,7 @@ fieldset {
     }
     
     footer {
-        display: flex;
-        align-items: flex-start;
+        padding: 5rem;
     }
 
 }
@@ -344,4 +339,25 @@ footer p {
     footer {
         justify-content: flex-start;
     }
+}
+
+.contenedor-bicicletas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--espacio-s);
+    padding: var(--espacio-s);
+}
+
+.contenedor-bicicletas article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.contenedor-bicicletas a {
+    margin-top: auto;
+}
+
+.contenedor-bicicletas img {
+    width: 100%;
 }

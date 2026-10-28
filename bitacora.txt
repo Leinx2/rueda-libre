@@ -326,3 +326,19 @@ También incorporé una etiqueta "Nuevo" en la tarjeta de la bicicleta eléctric
 Añadí un enlace fijo de contacto por WhatsApp en las tres páginas del sitio. Para mejorar su interacción visual, configuré el estado :hover, de modo que al pasar el cursor el fondo cambie a naranja y el texto a azul noche, respetando la paleta de colores definida para Rueda Libre. También mantuve el espacio inferior en pantallas pequeñas para evitar que el botón fijo se superponga con el contenido.
 
 Finalmente, probé la navegación entre las tres páginas, comprobé la navegación mediante teclado y revisé el diseño en diferentes tamaños de pantalla. Estas pruebas permitieron verificar la presentación general del sitio y detectar pequeños detalles visuales para su revisión.
+
+14. NUESTRA FLOTA
+
+¿Cómo lo hice? Utilicé CSS Grid para organizar las siete tarjetas de bicicletas en columnas adaptables y Flexbox para distribuir el contenido de cada tarjeta en columna. También utilicé margin-top: auto para mantener los enlaces «Reservar» al final de las tarjetas. Finalmente, comprobé el diseño con DevTools en diferentes anchos de pantalla.
+
+¿Por qué lo hice? Para conseguir una cuadrícula adaptable a diferentes tamaños de pantalla, sin utilizar media queries, y mantener los enlaces de reserva alineados.
+
+¿Para qué lo hice? Para cumplir los requisitos del reto, mejorar la presentación de la sección «Nuestra flota» y aprender a combinar CSS Grid y Flexbox.
+
+¿Utilicé IA? ¿Cómo la utilicé? Sí, utilicé ChatGPT como apoyo para comprender las propiedades de CSS Grid y Flexbox, resolver dudas y revisar mi código paso a paso. Escribí y probé el código para entender cómo funciona.
+
+Pruebas realizadas con DevTools:
+
+1280 px: 4 columnas.
+900 px: 3 columnas.
+500 px: 1 columna.
