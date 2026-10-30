@@ -373,3 +373,58 @@ Para cumplir los requisitos del reto, reproducir el boceto de escritorio y mejor
 ¿Cómo utilicé la IA?
 
 Utilicé ChatGPT como apoyo para comprender las propiedades de Grid y Flexbox, resolver dudas sobre las proporciones de las columnas y las media queries, y revisar mi código paso a paso. Escribí y probé los cambios para comprender cómo funcionan.
+
+16. Mobile First
+¿Qué hice?
+Adapté Rueda Libre a un diseño responsive con enfoque Mobile First, utilizando Flexbox para el encabezado y el pie de página, y Grid para la flota.
+
+¿Por qué y para qué?
+Para mejorar la visualización y distribución del contenido en celulares, tabletas y computadores.
+
+¿Cómo lo hice?
+Reorganicé el CSS con estilos base para móviles y media queries con min-width para ampliar la distribución en pantallas mayores. Me apoyé en la IA para reorganizar el CSS y comprender cómo adaptar el diseño existente, porque inicialmente me resultó abstracto cambiar de Desktop First a Mobile First.
+
+¿Utilicé IA?
+Sí. La utilicé como apoyo para reorganizar los estilos y entender la estructura mobile first ya que se me resulto algo bastante complicado. Después revisé los cambios en el navegador. (Ya lo pude entender)
+
+17. Pruebas en Bootstrap con Nuestra Flota
+
+Tiempo invertido:
+
+Estudio y comprensión de Bootstrap: aproximadamente 20-30 minutos.
+Implementación del catálogo: aproximadamente 15 minutos.
+
+Distribución con CSS propio frente a Bootstrap
+
+En mi versión propia utilicé CSS Grid para controlar la distribución de las bicicletas y adaptar las columnas a diferentes tamaños de pantalla.
+
+Utilicé aproximadamente 10 líneas de CSS relacionadas directamente con la distribución responsive:
+
+    Una columna inicialmente.
+    Dos columnas desde 768 px.
+    Cuatro columnas desde 1200 px.
+
+También utilicé propiedades como gap, padding y minmax() para controlar los espacios y el comportamiento de las columnas.
+
+En Bootstrap utilicé las siguientes clases:
+
+    col-12
+    col-sm-6
+    col-lg-4
+    col-xl-3
+    row g-3
+
+Con estas clases conseguí una distribución de una columna en celulares, dos desde sm, tres desde lg y cuatro desde xl.
+
+¿Qué me dio Bootstrap sin esfuerzo?
+Me permitió implementar una distribución responsive sin escribir media queries ni reglas CSS propias para organizar las columnas. También me proporcionó gutters para separar los elementos y un sistema de grilla basado en 12 columnas.
+
+Además, pude establecer diferentes distribuciones según el tamaño de pantalla utilizando únicamente clases en el HTML.
+
+¿Qué control perdí?
+Perdí parte del control directo sobre los valores de separación, los breakpoints y los anchos de las columnas, porque ahora dependo de las opciones y convenciones que proporciona Bootstrap.
+
+Con CSS propio tenía mayor libertad para personalizar el comportamiento de la grilla y definir exactamente cómo quería distribuir los elementos.
+
+¿Utilicé IA?
+Si, utilice Chatgpt y gemini para que me explicaran los conceptos de Bootstrap y como funcionaban

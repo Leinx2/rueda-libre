@@ -14,17 +14,7 @@
 }
 
 * {
-    box-sizing: border-box
-}
-
-main {
-    max-width: 70rem;
-    margin: 0 auto;
-    padding: 0 var(--espacio-m);
-}
-
-.portada {
-    min-height: 80vh;
+    box-sizing: border-box;
 }
 
 body {
@@ -35,7 +25,15 @@ body {
     margin: 0;
 }
 
-h1, h2, h3 {
+main {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 0 var(--espacio-m);
+}
+
+h1,
+h2,
+h3 {
     font-family: var(--fuente-titulos);
     font-weight: 700;
     color: var(--color-azul);
@@ -45,6 +43,16 @@ a {
     font-family: var(--fuente-textos);
     font-weight: 400;
     color: var(--color-verde);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    border: 0;
+    max-width: 100%;
 }
 
 button {
@@ -61,16 +69,46 @@ button:hover {
     background-color: var(--color-naranja);
 }
 
-iframe {
-    border: 0;
-    max-width: 100%;
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: 3px solid var(--color-naranja);
+    outline-offset: 3px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--espacio-s);
+    padding: var(--espacio-m);
+    text-align: center;
+}
+
+header img {
+    width: 75px;
+}
+
+header span {
+    color: var(--color-azul);
+}
+
+.marca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--espacio-s);
 }
 
 #menu {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     list-style: none;
     gap: var(--espacio-s);
-    flex-wrap: wrap;
+    padding-left: 0;
+    margin: 0;
 }
 
 #menu a {
@@ -95,60 +133,60 @@ iframe {
     outline-offset: 3px;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 10px 20px;
-}
-
-header img {
-    width: 90px;
-}
-
-.marca {
-    display: flex;
-    align-items: center;
-    gap: var(--espacio-s);
-}
-
 .boton-accion {
     color: var(--color-crema);
     background-color: var(--color-verde);
     padding: var(--espacio-s);
 }
 
-.boton-accion:hover{
+.boton-accion:hover {
     color: var(--color-azul);
     background-color: var(--color-naranja);
 }
 
-.boton-accion:focus{
+.boton-accion:focus {
     outline: 3px solid var(--color-naranja);
     outline-offset: 3px;
 }
 
-input:focus, select:focus,
-textarea:focus,
-button:focus {
-    outline: 3px solid var(--color-naranja);
-    outline-offset: 3px;
+.portada {
+    min-height: 80vh;
+}
+
+.hero-portada {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: var(--espacio-m);
+}
+
+.texto-portada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-portada img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .servicios {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     gap: var(--espacio-m);
 }
 
 .tarjeta-servicio {
+    width: 100%;
+    max-width: 400px;
     padding: var(--espacio-m);
     border: 1px solid var(--color-gris);
     border-radius: var(--espacio-s);
-    flex: 1;
-    min-width: 0;
     position: relative;
+    min-width: 0;
 
     display: flex;
     flex-direction: column;
@@ -160,35 +198,6 @@ button:focus {
     object-fit: contain;
     object-position: center;
     margin-top: auto;
-}
-
-table {
-    border-collapse: collapse;
-}
-
-th,
-td {
-    padding: var(--espacio-m);
-    border: 1px solid var(--color-gris);
-}
-
-thead th {
-    background-color: var(--color-azul);
-    color: var(--color-crema);
-}
-
-fieldset label {
-    display: inline;
-}
-
-input:not([type="radio"]):not([type="checkbox"]),
-select,
-textarea {
-    width: calc(100% - 6px);
-}
-
-fieldset {
-    margin-bottom: var(--espacio-m);
 }
 
 .etiqueta-nuevo {
@@ -203,26 +212,85 @@ fieldset {
     font-weight: 600;
 }
 
+.contenedor-rutas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--espacio-m);
+}
 
-.whatsapp-fijo {
-    position: fixed;
-    bottom: var(--espacio-m);
-    right: var(--espacio-m);
-    background-color: var(--color-verde);
+.contenedor-rutas img {
+    width: 100%;
+}
+
+.contenedor-bicicletas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--espacio-s);
+    padding: var(--espacio-s);
+}
+
+.contenedor-bicicletas article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 0;
+}
+
+.contenedor-bicicletas a {
+    margin-top: auto;
+}
+
+.contenedor-bicicletas img {
+    width: 100%;
+}
+
+.formulario-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--espacio-l);
+    align-items: start;
+}
+
+.formulario-layout aside {
+    position: static;
+}
+
+.inputs-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--espacio-s);
+}
+
+fieldset {
+    margin-bottom: var(--espacio-m);
+}
+
+fieldset label {
+    display: inline;
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+select,
+textarea {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+}
+
+th,
+td {
+    padding: 0.4rem;
+    border: 1px solid var(--color-gris);
+    overflow-wrap: anywhere;
+}
+
+thead th {
+    background-color: var(--color-azul);
     color: var(--color-crema);
-    padding: var(--espacio-m);
-    border-radius: var(--espacio-s);
-    text-decoration: none;
-}
-
-.whatsapp-fijo:hover {
-    color: var(--color-azul);
-    background-color: var(--color-naranja);
-}
-
-img {
-    max-width: 100%;
-    height: auto;
 }
 
 .tabla-contenedor {
@@ -232,9 +300,9 @@ img {
 
 .encuentranos-contenido {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     gap: var(--espacio-m);
-    flex-wrap: wrap;
 }
 
 .encuentranos-contenido iframe,
@@ -245,16 +313,15 @@ img {
 
 footer {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 2rem;
+    gap: var(--espacio-l);
 
     background-color: var(--color-azul);
     color: var(--color-crema);
-    padding: 5rem;
+    padding: var(--espacio-l);
     border-top: 4px solid var(--color-naranja);
-
+    padding-bottom: 80px;
 }
 
 footer h2 {
@@ -265,11 +332,8 @@ footer h2 {
 }
 
 footer > div {
-    flex: 0 1 280px;
-}
-
-.horario-footer {
-    flex-basis: 320px;
+    width: 100%;
+    min-width: 0;
 }
 
 .horario-footer dl {
@@ -308,121 +372,133 @@ footer p {
 }
 
 
-.contenedor-bicicletas {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--espacio-s);
-    padding: var(--espacio-s);
+.whatsapp-fijo {
+    position: fixed;
+    bottom: var(--espacio-m);
+    right: var(--espacio-m);
+    background-color: var(--color-verde);
+    color: var(--color-crema);
+    padding: var(--espacio-m);
+    border-radius: var(--espacio-l);
+    text-decoration: none;
 }
 
-.contenedor-bicicletas article {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+.whatsapp-fijo:hover {
+    color: var(--color-azul);
+    background-color: var(--color-naranja);
 }
 
-.contenedor-bicicletas a {
-    margin-top: auto;
-}
 
-.contenedor-bicicletas img {
-    width: 100%;
-}
 
-.hero-portada {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: var(--espacio-l);
-    min-height: 70vh;
-}
-
-.texto-portada {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.hero-portada img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.contenedor-rutas {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--espacio-m);
-}
-
-.contenedor-rutas img {
-    width: 100%;
-}
-
-.formulario-layout {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: var(--espacio-l);
-    align-items: start;
-}
-
-.formulario-layout aside {
-    position: sticky;
-    top: var(--espacio-s);
-}
-
-.inputs-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--espacio-s);
-}
-
-@media (max-width: 800px) {
-    .servicios {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .tarjeta-servicio {
-        width: 90%;
-        max-width: 400px;
-    }
+@media (min-width: 768px) {
 
     header {
-        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .marca {
+        flex-direction: row;
     }
 
     header img {
-        width: 75px;
+        width: 90px;
     }
 
-    #menu {
-        padding-left: 0;
-        gap: var(--espacio-s);
+    .servicios {
+        flex-direction: row;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+
+    .tarjeta-servicio {
+        flex: 1 1 40%;
+        max-width: none;
+    }
+
+    .contenedor-rutas {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .contenedor-bicicletas {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .inputs-layout {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th,
+    td {
+        padding: var(--espacio-s);
     }
 
     .encuentranos-contenido {
-    flex-direction: column;
-    align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: var(--espacio-l);
+    }
+
+    footer > div {
+        flex: 1 1 40%;
+    }
+}
+
+@media (min-width: 1200px) {
+
+
+    .hero-portada {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--espacio-l);
+        min-height: 70vh;
+    }
+
+    .contenedor-rutas {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .contenedor-bicicletas {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 
     .formulario-layout {
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr 1fr;
     }
-    
-    .hero-portada {
-        grid-template-columns: 1fr;
-    }
-}
 
-@media (max-width: 1039px) {
+    .formulario-layout aside {
+        position: sticky;
+        top: var(--espacio-s);
+    }
+
+    .servicios {
+        flex-wrap: nowrap;
+    }
+
+    .tarjeta-servicio {
+        flex: 1;
+    }
+
     footer {
-        justify-content: flex-start;
+        justify-content: space-between;
     }
-}
 
-@media (max-width: 500px){
-    .inputs-layout {
-        grid-template-columns: 1fr;
+    footer > div {
+        flex: 0 1 280px;
+    }
+
+    .horario-footer {
+        flex-basis: 320px;
     }
 }
