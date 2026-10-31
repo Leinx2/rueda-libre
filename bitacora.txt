@@ -428,3 +428,20 @@ Con CSS propio tenía mayor libertad para personalizar el comportamiento de la g
 
 ¿Utilicé IA?
 Si, utilice Chatgpt y gemini para que me explicaran los conceptos de Bootstrap y como funcionaban
+
+18. Clases consultadas en la documentación oficial de Bootstrap
+
+Clases consultadas en la documentación oficial de Bootstrap
+
+d-none: Oculta un elemento de la página.
+
+d-flex: Activa el sistema Flexbox para organizar los elementos de un contenedor.
+
+bg-light: Aplica un color de fondo claro a un elemento.
+
+text-success: Aplica el color de texto asociado al estado de éxito.
+
+flex-md-row: Organiza los elementos de un contenedor Flexbox en fila a partir del breakpoint md (768 px).
+
+¿Utilicé IA?
+Si, utilice Chatgpt y gemini para que me explicaran los conceptos de Bootstrap o me ayudaran con errores que no podia solucionar o encontrar en la documentación y como funcionaban
