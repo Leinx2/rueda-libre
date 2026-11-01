@@ -153,12 +153,6 @@ header span {
     min-height: 80vh;
 }
 
-.hero-portada {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    gap: var(--espacio-m);
-}
 
 .texto-portada {
     display: flex;
@@ -166,11 +160,6 @@ header span {
     justify-content: center;
 }
 
-.hero-portada img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
 
 .servicios {
     display: flex;
@@ -210,38 +199,6 @@ header span {
     border-radius: var(--espacio-s);
     font-size: 0.8rem;
     font-weight: 600;
-}
-
-.contenedor-rutas {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--espacio-m);
-}
-
-.contenedor-rutas img {
-    width: 100%;
-}
-
-.contenedor-bicicletas {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--espacio-s);
-    padding: var(--espacio-s);
-}
-
-.contenedor-bicicletas article {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    min-width: 0;
-}
-
-.contenedor-bicicletas a {
-    margin-top: auto;
-}
-
-.contenedor-bicicletas img {
-    width: 100%;
 }
 
 .formulario-layout {
@@ -417,14 +374,6 @@ footer p {
         max-width: none;
     }
 
-    .contenedor-rutas {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .contenedor-bicicletas {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
     .inputs-layout {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -457,21 +406,6 @@ footer p {
 }
 
 @media (min-width: 1200px) {
-
-
-    .hero-portada {
-        grid-template-columns: 1fr 1fr;
-        gap: var(--espacio-l);
-        min-height: 70vh;
-    }
-
-    .contenedor-rutas {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .contenedor-bicicletas {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
 
     .formulario-layout {
         grid-template-columns: 2fr 1fr;
