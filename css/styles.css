@@ -58,15 +58,6 @@ iframe {
 button {
     font-family: var(--fuente-textos);
     font-weight: 400;
-    color: var(--color-crema);
-    background-color: var(--color-verde);
-    padding: var(--espacio-s);
-    border-radius: var(--espacio-s);
-}
-
-button:hover {
-    color: var(--color-azul);
-    background-color: var(--color-naranja);
 }
 
 input:focus,
@@ -201,23 +192,6 @@ header span {
     font-weight: 600;
 }
 
-.formulario-layout {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--espacio-l);
-    align-items: start;
-}
-
-.formulario-layout aside {
-    position: static;
-}
-
-.inputs-layout {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--espacio-s);
-}
-
 fieldset {
     margin-bottom: var(--espacio-m);
 }
@@ -248,11 +222,6 @@ td {
 thead th {
     background-color: var(--color-azul);
     color: var(--color-crema);
-}
-
-.tabla-contenedor {
-    max-width: 100%;
-    overflow-x: auto;
 }
 
 .encuentranos-contenido {
@@ -345,6 +314,13 @@ footer p {
     background-color: var(--color-naranja);
 }
 
+.bloque-superior-bici {
+    min-height: 290px;
+}
+
+.bloque-superior-rutas {
+    min-height: 70px;
+}
 
 
 @media (min-width: 768px) {
@@ -372,10 +348,6 @@ footer p {
     .tarjeta-servicio {
         flex: 1 1 40%;
         max-width: none;
-    }
-
-    .inputs-layout {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     table {
@@ -406,15 +378,6 @@ footer p {
 }
 
 @media (min-width: 1200px) {
-
-    .formulario-layout {
-        grid-template-columns: 2fr 1fr;
-    }
-
-    .formulario-layout aside {
-        position: sticky;
-        top: var(--espacio-s);
-    }
 
     .servicios {
         flex-wrap: nowrap;

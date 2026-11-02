@@ -444,4 +444,21 @@ text-success: Aplica el color de texto asociado al estado de éxito.
 flex-md-row: Organiza los elementos de un contenedor Flexbox en fila a partir del breakpoint md (768 px).
 
 ¿Utilicé IA?
-Si, utilice Chatgpt y gemini para que me explicaran los conceptos de Bootstrap o me ayudaran con errores que no podia solucionar o encontrar en la documentación y como funcionaban
+Si, utilice Chatgpt y gemini para que me explicaran los conceptos de Bootstrap o me ayudaran con errores que no podia solucionar o encontrar en la documentación y como funcionaban.
+
+19. Comparación v1.5 vs. v2.0-beta
+
+Líneas de CSS: v1.5 tenía 504 líneas y v2.0-beta tiene 400. Se redujeron 104 líneas (20,6 %).
+
+Tiempo: No se registró con exactitud. La migración tomó varias sesiones entre aprendizaje, implementación, corrección y pruebas. Pero me parecio mucho mas fácil y podria decir que rápido a pesar de que no calculé el tiempo correctamente.
+
+Ventajas de Bootstrap: facilita la creación de diseños responsivos y reduce la cantidad de CSS necesario para la distribución.
+
+Desventajas: requiere aprender sus clases y adaptarse a su estructura.
+
+Conflictos: No recuerdo haber tenido conflictos importantes durante la migración.
+
+Conclusión: Bootstrap permitió simplificar parte del CSS y organizar mejor las secciones migradas, manteniendo los estilos propios de Rueda Libre.
+
+¿Utilicé IA?
+Si, utilice Chatgpt y gemini para que me explicaran los conceptos de Bootstrap o me ayudaran con errores que no podia solucionar o encontrar en la documentación y como funcionaban.
