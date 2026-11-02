@@ -60,14 +60,6 @@ button {
     font-weight: 400;
 }
 
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-    outline: 3px solid var(--color-naranja);
-    outline-offset: 3px;
-}
-
 header {
     display: flex;
     flex-direction: column;
@@ -87,15 +79,12 @@ header span {
 
 .marca {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: var(--espacio-s);
 }
 
 #menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     list-style: none;
     gap: var(--espacio-s);
     padding-left: 0;
@@ -108,7 +97,7 @@ header span {
     white-space: nowrap;
 }
 
-#menu a.activo {
+#menu a.active {
     color: var(--color-verde);
     font-weight: 700;
     text-decoration: underline;
@@ -119,25 +108,28 @@ header span {
     color: var(--color-naranja);
 }
 
-#menu a:focus {
+#menu a:focus,
+input:focus,
+select:focus,
+textarea:focus,
+.btn:focus,
+.navbar-toggler:focus {
     outline: 3px solid var(--color-naranja);
     outline-offset: 3px;
 }
 
-.boton-accion {
-    color: var(--color-crema);
-    background-color: var(--color-verde);
-    padding: var(--espacio-s);
-}
-
-.boton-accion:hover {
-    color: var(--color-azul);
-    background-color: var(--color-naranja);
-}
-
-.boton-accion:focus {
+.form-control:focus,
+.form-select:focus,
+.form-check-input:focus {
     outline: 3px solid var(--color-naranja);
     outline-offset: 3px;
+    box-shadow: none;
+}
+
+.navbar-toggler:focus,
+.btn:focus,
+.nav-link:focus {
+    box-shadow: none;
 }
 
 .portada {
@@ -302,17 +294,8 @@ footer p {
     position: fixed;
     bottom: var(--espacio-m);
     right: var(--espacio-m);
-    background-color: var(--color-verde);
-    color: var(--color-crema);
-    padding: var(--espacio-m);
-    border-radius: var(--espacio-l);
-    text-decoration: none;
 }
 
-.whatsapp-fijo:hover {
-    color: var(--color-azul);
-    background-color: var(--color-naranja);
-}
 
 .bloque-superior-bici {
     min-height: 290px;
@@ -321,7 +304,6 @@ footer p {
 .bloque-superior-rutas {
     min-height: 70px;
 }
-
 
 @media (min-width: 768px) {
 
