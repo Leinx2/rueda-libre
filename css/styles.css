@@ -11,6 +11,51 @@
     --espacio-s: 0.5rem;
     --espacio-m: 1rem;
     --espacio-l: 2rem;
+
+    --bs-primary: #1E7A4F;
+    --bs-primary-rgb: 30, 122, 79;
+
+    --bs-body-font-family: var(--fuente-textos);
+
+    --bs-link-color: #1E7A4F;
+    --bs-link-color-rgb: 30, 122, 79;
+
+    --bs-border-radius: 0.5rem;
+
+    --bs-link-hover-color: #17613F;
+    --bs-link-hover-color-rgb: 23, 97, 63;
+}
+
+.btn-primary {
+    --bs-btn-color: #FFFFFF;
+    --bs-btn-bg: var(--color-verde);
+    --bs-btn-border-color: var(--color-verde);
+
+    --bs-btn-hover-color: #FFFFFF;
+    --bs-btn-hover-bg: #17613F;
+    --bs-btn-hover-border-color: #17613F;
+
+    --bs-btn-active-color: #FFFFFF;
+    --bs-btn-active-bg: #124D32;
+    --bs-btn-active-border-color: #124D32;
+
+    --bs-btn-disabled-color: #FFFFFF;
+    --bs-btn-disabled-bg: #5B6470;
+    --bs-btn-disabled-border-color: #5B6470;
+}
+
+.btn-naranja {
+    --bs-btn-color: #14213D;
+    --bs-btn-bg: var(--color-naranja);
+    --bs-btn-border-color: var(--color-naranja);
+
+    --bs-btn-hover-color: #14213D;
+    --bs-btn-hover-bg: #E58A1C;
+    --bs-btn-hover-border-color: #E58A1C;
+
+    --bs-btn-active-color: #14213D;
+    --bs-btn-active-bg: #CC7815;
+    --bs-btn-active-border-color: #CC7815;
 }
 
 * {
@@ -91,21 +136,21 @@ header span {
     margin: 0;
 }
 
-#menu a {
+#menu .nav-link {
     color: var(--color-verde);
     padding: var(--espacio-s);
     white-space: nowrap;
 }
 
-#menu a.active {
+#menu .nav-link.active {
     color: var(--color-verde);
     font-weight: 700;
     text-decoration: underline;
     text-underline-offset: 5px;
 }
 
-#menu a:hover {
-    color: var(--color-naranja);
+#menu .nav-link:hover {
+    color: #17613F;
 }
 
 #menu a:focus,
@@ -306,7 +351,7 @@ footer p {
 }
 
 .card-title {
-    height: 3rem;
+    min-height: 3rem;
     line-height: 1.5rem;
 }
 
@@ -314,6 +359,22 @@ footer p {
 .carousel-control-next:focus-visible {
     outline: 3px solid var(--color-naranja);
     outline-offset: -3px;
+}
+
+.beneficio-card {
+    border: 1px solid var(--color-verde);
+    border-radius: 0.75rem;
+    transition: transform 0.2s ease;
+}
+
+.beneficio-card:hover {
+    transform: translateY(-4px);
+}
+
+.alert-dismissible .btn-close:focus {
+    outline: 3px solid var(--color-naranja);
+    outline-offset: -3px;
+    box-shadow: none;
 }
 
 @media (min-width: 768px) {

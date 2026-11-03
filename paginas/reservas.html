@@ -25,11 +25,20 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarMenu">
                 <ul class="navbar-nav ms-auto flex-column flex-lg-row" id="menu">
-                    <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
-                    <li class="nav-item"><a href="./tarifas.html" class="nav-link">Tarifas y rutas</a></li>
-                    <li class="nav-item"><a href="./reservas.html" class="nav-link active" aria-current="page">Reservas</a></li>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">
+                        <i class="bi bi-house-door" aria-hidden="true"></i>
+                        Inicio
+                    </a></li>
+                    <li class="nav-item"><a href="./tarifas.html" class="nav-link">
+                        <i class="bi bi-currency-dollar" aria-hidden="true"></i>
+                        Tarifas y rutas
+                    </a></li>
+                    <li class="nav-item"><a href="./reservas.html" class="nav-link active" aria-current="page">
+                        <i class="bi bi-calendar-check" aria-hidden="true"></i>
+                        Reservas
+                    </a></li>
                     <li class="nav-item">
-                        <a href="../#flota" class="btn btn-success d-flex justify-content-center text-light">Ver bicicletas</a>
+                        <a href="../#flota" class="btn btn-primary d-flex justify-content-center text-light">Ver bicicletas</a>
                     </li>
                 </ul>
             </div>
@@ -37,32 +46,32 @@
     </nav>
 
     <main>
-        <h1>Reservas de Rueda Libre</h1>
+        <h1><i class="bi bi-calendar-plus" aria-hidden="true"></i> Reservas de Rueda Libre</h1>
 
         <section>
-            <h2>Reserva tu bicicleta</h2>
+            <h2><i class="bi bi-bicycle" aria-hidden="true"></i> Reserva tu bicicleta</h2>
 
             <p>
                 Para reservar, escríbenos a:
                 <a href="mailto:bicicletas@ruedalibre.com">
-                    bicicletas@ruedalibre.com
+                    <i class="bi bi-envelope-fill" aria-hidden="true"></i> bicicletas@ruedalibre.com
                 </a>
             </p>
         </section>
 
         <div class="container mb-3">
             <section>
-                <h2>Formulario de Reserva</h2>
+                <h2><i class="bi bi-file-earmark-text" aria-hidden="true"></i> Formulario de Reserva</h2>
                 <div class="row">
                     <div class="col-12 col-md-8">
                     <div class="alert alert-info alert-dismissible fade show" role="alert">
-                        <strong>¡Importante!</strong> Recuerda llevar tu documento de identidad original al recoger la bicicleta.
+                        <strong><i class="bi bi-info-circle-fill" aria-hidden="true"></i> ¡Importante!</strong> Recuerda llevar tu documento de identidad original al recoger la bicicleta.
 
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
                     </div>
                         <form action="/procesar-datos" method="post" class="bg-white p-4 rounded-3 shadow-sm needs-validation" novalidate>
                             <fieldset>
-                                <legend>Tus Datos</legend>
+                                <legend><i class="bi bi-person-fill" aria-hidden="true"></i> Tus Datos</legend>
 
                                 <label for="txt-nombre" class="form-label">Nombre Completo</label>
                                 <input type="text" name="nombre_usuario" id="txt-nombre" placeholder="Nombre completo" minlength="3" required class="form-control">
@@ -96,7 +105,7 @@
                             </fieldset>
 
                             <fieldset>
-                                <legend>Tu Alquiler</legend>
+                                <legend><i class="bi bi-bicycle" aria-hidden="true"></i> Tu Alquiler</legend>
 
                                 <label for="fecha-alquiler" class="form-label">Fecha del Alquiler</label>
                                 <input type="date" name="fecha_alquiler" id="fecha-alquiler" min="2026-11-01" max="2026-12-31" required class="form-control">
@@ -126,7 +135,7 @@
                             </fieldset>
 
                             <fieldset>
-                                <legend>Plan de Ruta</legend>
+                                <legend><i class="bi bi-map" aria-hidden="true"></i> Plan de Ruta</legend>
 
                                 <label for="sel-plan" class="form-label">
                                     Selecciona el tiempo de alquiler
@@ -165,16 +174,16 @@
                                     <input type="checkbox" name="acepta_condiciones" id="acepta-condiciones" required class="form-check-input">
                                     <label for="acepta-condiciones" class="form-check-label">
                                         Acepto las condiciones de la reserva
-                                    </label>
-                                    <button type="button" class="btn btn-outline-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalPoliticas"> Leer políticas de alquiler </button>
+                                    </label>                                    
+                                    <button type="button" class="btn btn-outline-primary btn-sm d-flex" data-bs-toggle="modal" data-bs-target="#modalPoliticas"><i class="bi bi-file-text" aria-hidden="true"></i> Leer políticas de alquiler </button>                                        
                                     <div class="invalid-feedback">
                                         Debes aceptar las condiciones para confirmar la reserva.
                                     </div>
                                 </div>
                             </fieldset>
 
-                            <button type="submit" name="reserva" class="btn btn-success">
-                                Confirmar y Enviar
+                            <button type="submit" name="reserva" class="btn btn-primary">
+                                <i class="bi bi-check-circle" aria-hidden="true"></i> Confirmar y Enviar
                             </button>
                         </form>
                         <div class="modal fade" id="modalPoliticas" tabindex="-1"
@@ -228,7 +237,7 @@
                     <div class="col-12 col-md-4 mt-3">
                         <aside>
                             <section>
-                                <h2>Horario de atención</h2>
+                                <h2><i class="bi bi-clock" aria-hidden="true"></i> Horario de atención</h2>
 
                                 <dl>
                                     <dt>Lunes a Viernes</dt>
@@ -256,13 +265,14 @@
 
             <p>&copy; 2026 Rueda Libre. Todos los derechos reservados.</p>
 
-            <a href="../index.html">Volver al inicio</a>
+            <a href="../index.html"><i class="bi bi-arrow-left" aria-hidden="true"></i> Volver al inicio</a>
         </div>
 
         <div class="contacto-footer">
             <h2>Contacto</h2>
 
             <p>
+                <i class="bi bi-envelope-fill" aria-hidden="true"></i>
                 Correo:
                 <a href="mailto:bicicletas@ruedalibre.com">
                     bicicletas@ruedalibre.com
@@ -285,7 +295,7 @@
             </dl>
         </div>
     </footer>
-    <a class="whatsapp-fijo btn btn-success fs-4 rounded-circle"
+    <a class="whatsapp-fijo btn btn-primary fs-4 rounded-circle"
     href="https://wa.me/573000000000"
     target="_blank"
     rel="noopener noreferrer"

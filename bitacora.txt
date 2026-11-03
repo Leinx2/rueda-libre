@@ -462,3 +462,25 @@ Conclusión: Bootstrap permitió simplificar parte del CSS y organizar mejor las
 
 ¿Utilicé IA?
 Si, utilice Chatgpt y gemini para que me explicaran los conceptos de Bootstrap o me ayudaran con errores que no podia solucionar o encontrar en la documentación y como funcionaban.
+
+20. PERSONALIZACIÓN DE IDENTIDAD VISUAL
+
+Se personalizó la versión Bootstrap de Rueda Libre utilizando los colores de la marca, tipografías y variables CSS de Bootstrap. Se personalizaron los botones principales y se creó una variante naranja, además de clases propias para complementar los componentes del framework.
+
+Se incorporaron iconos de Bootstrap Icons en el navbar, beneficios, información de contacto y botón flotante de WhatsApp. También se revisaron los estados hover, active y focus, la accesibilidad y el contraste de colores.
+
+Se realizaron pruebas de visualización en diferentes resoluciones (360px, 768px y 1280px), navegación con teclado y funcionamiento de los componentes. Finalmente, se corrigieron el navbar y el botón de WhatsApp en las páginas de la versión original (main).
+
+CAPTURAS DE PANTALLA
+
+Capturas de la versión original (antes):
+- img/capturas/index-before.png
+- img/capturas/tarifas-before.png
+- img/capturas/formulario-before.png
+
+Capturas de la versión personalizada (después):
+- img/capturas/index-after.png
+- img/capturas/tarifas-after.png
+- img/capturas/formulario-after.png
+
+Se completó la personalización visual de Rueda Libre y se preparó la versión 2.0.
