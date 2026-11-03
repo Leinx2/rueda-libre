@@ -305,6 +305,17 @@ footer p {
     min-height: 70px;
 }
 
+.card-title {
+    height: 3rem;
+    line-height: 1.5rem;
+}
+
+.carousel-control-prev:focus-visible,
+.carousel-control-next:focus-visible {
+    outline: 3px solid var(--color-naranja);
+    outline-offset: -3px;
+}
+
 @media (min-width: 768px) {
 
     header {
